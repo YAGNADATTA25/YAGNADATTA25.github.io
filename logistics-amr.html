@@ -20,8 +20,8 @@
 <section class="amr-video" aria-labelledby="amr-video-heading">
 <p class="eyebrow">RECORDED SIMULATION / RVIZ + GAZEBO</p>
 <h2 id="amr-video-heading">Full warehouse mission demonstration</h2>
-<div id="amr-video-slot" class="amr-video-placeholder">The recorded 2 min 44 sec demonstration is being prepared for web playback.</div>
-<p class="amr-caption">The recording shows the RViz map and trajectory, Gazebo warehouse simulation, and live terminal output. Upload <code>assets/warehouse-amr-demo.mp4</code> to this repository to enable the player.</p>
+<div id="amr-video-slot" class="amr-video-placeholder">The recorded warehouse AMR demonstration video is available below.</div>
+<p class="amr-caption">The recording shows the RViz map and trajectory, Gazebo warehouse simulation, and live terminal output. The source file <code>1103.mp4</code> is hosted in this portfolio repository.</p>
 </section>
 <div class="detail-body">
 <section>
@@ -66,7 +66,7 @@
 <script>
 (function(){
   const slot=document.getElementById('amr-video-slot');
-  const src='/assets/warehouse-amr-demo.mp4';
+  const src='/1103.mp4';
   fetch(src,{method:'HEAD'}).then(r=>{
     if(!r.ok) return;
     const video=document.createElement('video');
