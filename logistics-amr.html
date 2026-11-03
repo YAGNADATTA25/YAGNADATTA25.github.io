@@ -1,2 +1,81 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Multi-goal logistics AMR | Yagna Datta Gottipati</title><meta name="description" content="Mechatronics and robotics portfolio of Yagna Datta Gottipati. Explore ROS 2 navigation, vision-guided control and ongoing SLAM research."><link rel="stylesheet" href="/style.css"><link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%2318272c'/%3E%3Cpath%20d='M8%208l8%2010%208-10M16%2018v7'%20fill='none'%20stroke='%23b6f34b'%20stroke-width='3'/%3E%3C/svg%3E"></head><body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="/">YD<span> / </span>GOTTIPATI</a><nav aria-label="Main navigation"><a href="/#work">Projects</a><a href="/#about">About</a><a href="/#experience">Experience</a><a href="/#skills">Skills</a><a href="/#contact">Contact</a><a class="cv" href="/yagna-datta-cv.pdf" download="Yagna-Datta-Gottipati-CV.pdf" target="_blank" rel="noopener">Download CV</a></nav><div class="preferences"><button type="button" id="language" aria-label="Switch language">DE</button><button type="button" id="theme" aria-label="Switch colour theme">☾</button></div></header><main id="main" class="detail"><a class="back" href="/#work">All projects</a><p class="eyebrow">PROJECT 02 / MOBILE ROBOTICS</p><h1>Multi-goal logistics AMR</h1><p class="detail-intro">Warehouse waypoint navigation with predictive local planning and a directional safety override.</p><div class="tags"><span>ROS 2</span><span>Nav2</span><span>DWA</span></div><div class="detail-body"><section><h2>The question</h2><p>How can an autonomous mobile robot visit multiple warehouse destinations while reacting to obstacles?</p><h2>The approach</h2><p>The repository describes waypoint dispatch through Nav2, predictive Dynamic Window Approach trajectory evaluation and a directional LiDAR safety layer. Telemetry includes cross-track error, heading deviation and distance to goal.</p></section><aside><p class="eyebrow">PROJECT SOURCE</p><h3>Multi-goal logistics AMR</h3><p>Explore the source, setup notes and technical documentation.</p><a class="button" href="https://github.com/YAGNADATTA25/Multi-Goal-Logistics-AMR-with-Hybrid-Predictive-DWA-and-Directional-Safety-Reflex-Loops." target="_blank" rel="noopener">View on GitHub</a></aside></div><section class="pipeline"><p class="eyebrow">SYSTEM FLOW / CONCEPTUAL OVERVIEW</p><div><div><span>01</span><b>Waypoint mission</b></div><div><span>02</span><b>Nav2 path</b></div><div><span>03</span><b>Local trajectory</b></div><div><span>04</span><b>Safety override</b></div></div></section><section class="note"><h2>Engineering focus</h2><p>A project connecting mission-level navigation with local control and telemetry.</p></section><div class="detail-next"><a href="/wall-following.html">Next project: ROS 2 wall following</a></div></main><footer><a class="brand" href="/">Yagna Datta Gottipati</a><span>Mechatronics · Robotics · Continuous learning</span><a href="https://github.com/YAGNADATTA25" target="_blank" rel="noopener">GitHub</a></footer><script src="/preferences.js"></script></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Multi-goal logistics AMR | Yagna Datta Gottipati</title><meta name="description" content="Mechatronics and robotics portfolio of Yagna Datta Gottipati. Explore ROS 2 navigation, vision-guided control and ongoing SLAM research."><link rel="stylesheet" href="/style.css"><link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%2318272c'/%3E%3Cpath%20d='M8%208l8%2010%208-10M16%2018v7'%20fill='none'%20stroke='%23b6f34b'%20stroke-width='3'/%3E%3C/svg%3E"></head><body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="/">YD<span> / </span>GOTTIPATI</a><nav aria-label="Main navigation"><a href="/#work">Projects</a><a href="/#about">About</a><a href="/#experience">Experience</a><a href="/#skills">Skills</a><a href="/#contact">Contact</a><a class="cv" href="/yagna-datta-cv.pdf" download="Yagna-Datta-Gottipati-CV.pdf" target="_blank" rel="noopener">Download CV</a></nav><div class="preferences"><button type="button" id="language" aria-label="Switch language">DE</button><button type="button" id="theme" aria-label="Switch colour theme">☾</button></div></header><main id="main" class="detail"><a class="back" href="/#work">All projects</a><p class="eyebrow">PROJECT 02 / MOBILE ROBOTICS</p><h1>Multi-goal logistics AMR</h1><p class="detail-intro">Six-goal warehouse navigation using Nav2, LiDAR-based obstacle tracking and a custom Predictive DWA velocity supervisor. Measured in Gazebo with four moving obstacles.</p><div class="tags"><span>ROS 2</span><span>Nav2</span><span>Predictive DWA</span><span>LiDAR</span><span>Gazebo</span></div>
+<style>
+.amr-results{margin:34px 0 54px}.amr-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.amr-kpi{border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:22px 18px}.amr-kpi strong{display:block;font:700 clamp(25px,3vw,38px)/1.1 "Space Grotesk",sans-serif;letter-spacing:-.045em}.amr-kpi span{display:block;color:var(--muted);font-size:13px;margin-top:8px}.amr-caption,.amr-method p,.amr-method li{color:var(--muted);font-size:15px}.amr-method{border-top:1px solid var(--line);padding-top:28px;margin-top:38px}.amr-method h2,.amr-results h2{font-size:30px}.amr-method ul{padding-left:24px}.amr-method li{margin:10px 0}.amr-video-placeholder{background:var(--surface);padding:28px;border:1px dashed var(--line);border-radius:12px;color:var(--muted)}.amr-video video{width:100%;border-radius:12px;max-height:650px;background:#121822}.amr-video{margin:40px 0}.amr-video h2{font-size:30px}.amr-badge{display:inline-block;border:1px solid var(--line);border-radius:9px;padding:6px 12px;font-size:12px;letter-spacing:.06em;font-weight:700}.amr-pipeline{font-size:15px}.amr-links{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}.amr-links a{padding:10px 16px;border:1px solid var(--line);border-radius:9px;font-size:14px;font-weight:600}.amr-links a:hover{border-color:var(--lime)}@media(max-width:700px){.amr-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:400px){.amr-kpis{grid-template-columns:1fr}}
+</style>
+<section class="amr-results" aria-labelledby="amr-results-heading">
+<p class="amr-badge">GAZEBO CLASSIC · ONE RECORDED MISSION</p>
+<h2 id="amr-results-heading">Measured navigation results</h2>
+<p class="amr-caption">The integrated system completed six sequential warehouse goals. Metrics were extracted from one ROS 2 rosbag2 recording and the Simulation Master's telemetry; they are not a multi-run benchmark.</p>
+<div class="amr-kpis">
+<div class="amr-kpi"><strong>6 / 6</strong><span>Navigation goals verified</span></div>
+<div class="amr-kpi"><strong>155 s</strong><span>Mission duration</span></div>
+<div class="amr-kpi"><strong>31.94 m</strong><span>Odometry distance</span></div>
+<div class="amr-kpi"><strong>3.26 cm</strong><span>Mean logged cross-track error</span></div>
+<div class="amr-kpi"><strong>24.54 ms</strong><span>Mean reported DWA computation time</span></div>
+<div class="amr-kpi"><strong>95 ms</strong><span>Maximum reported DWA computation time</span></div>
+</div>
+<p class="amr-caption">Additional recorded observations: mean speed while moving 0.235 m/s; maximum measured speed 0.271 m/s; 155 global path messages and 150 changed path geometries. Path changes are not equivalent to 150 obstacle-triggered replans.</p>
+</section>
+<section class="amr-video" aria-labelledby="amr-video-heading">
+<p class="eyebrow">RECORDED SIMULATION / RVIZ + GAZEBO</p>
+<h2 id="amr-video-heading">Full warehouse mission demonstration</h2>
+<div id="amr-video-slot" class="amr-video-placeholder">The recorded 2 min 44 sec demonstration is being prepared for web playback.</div>
+<p class="amr-caption">The recording shows the RViz map and trajectory, Gazebo warehouse simulation, and live terminal output. Upload <code>assets/warehouse-amr-demo.mp4</code> to this repository to enable the player.</p>
+</section>
+<div class="detail-body">
+<section>
+<h2>The challenge</h2>
+<p>Navigate six warehouse destinations through constrained corridors and around four moving obstacles. Nav2 provides global path planning and built-in DWB path following; the custom node adds short-horizon motion-aware supervision.</p>
+<h2>What I implemented</h2>
+<p>The Python Simulation Master groups LiDAR detections across scans, estimates tracked-obstacle velocities, and extrapolates short-term motion using a constant-velocity model. It evaluates a 25 × 25 grid of candidate linear/angular velocity commands (625 combinations), simulates trajectories for 3 seconds at 0.2-second steps, and selects a feasible command that stays close to Nav2's request. The configured control period is 0.1 seconds (10 Hz).</p>
+<p>The selected velocity is passed through the configured safety chain before Gazebo executes it. Nav2 independently updates costmaps with LiDAR data and can replan the global route; the custom supervisor does not replace Nav2's global planner.</p>
+</section>
+<aside>
+<p class="eyebrow">SOURCE AND METHODS</p>
+<h3>ROS 2 Warehouse AMR</h3>
+<p>Code, launch configuration, parameter files and documentation.</p>
+<div class="amr-links"><a href="https://github.com/YAGNADATTA25/Multi-Goal-Logistics-AMR-with-Hybrid-Predictive-DWA-and-Directional-Safety-Reflex-Loops." target="_blank" rel="noopener">View source on GitHub</a></div>
+<p class="amr-caption">The reproducible configuration and analysis script should be published alongside the exact version used for the recorded run.</p>
+</aside>
+</div>
+<section class="pipeline" aria-label="Architecture">
+<p class="eyebrow">SYSTEM ARCHITECTURE</p>
+<div class="amr-pipeline">
+<div><span>01</span><b>Mission + Nav2 planning</b></div>
+<div><span>02</span><b>DWB velocity request</b></div>
+<div><span>03</span><b>Predictive DWA supervisor</b></div>
+<div><span>04</span><b>Safety check + Gazebo</b></div>
+</div>
+</section>
+<section class="amr-method">
+<h2>How the results were measured</h2>
+<p>During a full mission, ROS 2 <code>rosbag2</code> recorded odometry, LiDAR, global plans, system logs and navigation status. A Python analysis script extracted the measurements:</p>
+<ul>
+<li><b>31.94 m travelled:</b> summing consecutive recorded odometry position increments, with small movements and large jumps filtered.</li>
+<li><b>155 s mission duration:</b> subtracting the recorded mission-start and completion log timestamps.</li>
+<li><b>6/6 goals:</b> counting distinct goal-verification messages published by the mission controller.</li>
+<li><b>3.26 cm mean path error:</b> averaging cross-track error samples reported in the controller's telemetry.</li>
+<li><b>24.54 ms mean and 95 ms maximum DWA time:</b> aggregating computation times reported in the same telemetry.</li>
+<li><b>155 paths / 150 geometry changes:</b> counting <code>/plan</code> messages and differences between rounded successive path point sets.</li>
+</ul>
+<p><b>Limitations:</b> A single successful simulation run does not establish reliability across repeated trials, superiority over standard Nav2, or collision-free operation. A 0.120 m minimum LiDAR reading measures sensor range, not robot-body clearance. The 95 ms maximum compute time is close to the 100 ms control interval.</p>
+<div class="amr-links"><a href="https://github.com/YAGNADATTA25/Multi-Goal-Logistics-AMR-with-Hybrid-Predictive-DWA-and-Directional-Safety-Reflex-Loops./tree/main" target="_blank" rel="noopener">Repository and documentation</a><a href="/#work">Back to other projects</a></div>
+</section>
+<section class="note"><h2>Next research steps</h2><p>Multi-run benchmarking against standard Nav2, improved obstacle-trajectory prediction for turning and accelerating objects, SLAM-based mapping and localisation, and eventually multi-robot fleet coordination.</p></section>
+<script>
+(function(){
+  const slot=document.getElementById('amr-video-slot');
+  const src='/assets/warehouse-amr-demo.mp4';
+  fetch(src,{method:'HEAD'}).then(r=>{
+    if(!r.ok) return;
+    const video=document.createElement('video');
+    video.controls=true;video.preload='metadata';video.playsInline=true;
+    video.setAttribute('aria-label','Warehouse AMR mission screen recording');
+    video.src=src;
+    slot.className='';
+    slot.replaceChildren(video);
+  }).catch(()=>{});
+})();
+</script>
+<div class="detail-next"><a href="/wall-following.html">Next project: ROS 2 wall following</a></div></main><footer><a class="brand" href="/">Yagna Datta Gottipati</a><span>Mechatronics · Robotics · Continuous learning</span><a href="https://github.com/YAGNADATTA25" target="_blank" rel="noopener">GitHub</a></footer><script src="/preferences.js"></script></body></html>
